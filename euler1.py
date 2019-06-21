@@ -6,11 +6,12 @@ multiplo = 0
 suma = 0
 
 while secuencia < limite - 1:
+    print("el multiplo previo fue: ", multiplo)
     secuencia = secuencia + 1
     if secuencia%3 == 0 or secuencia%5 == 0:
         multiplo = secuencia
         print("el multiplo es", multiplo)
-    suma = multiplo + secuencia
+    # suma = multiplo + secuencia
         
 
 print("el resultado es", suma)
