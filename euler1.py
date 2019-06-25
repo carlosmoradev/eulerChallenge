@@ -1,17 +1,22 @@
 #!/usr/bin/python3
 
 limite = int(input("Indique el limite para realizar el calculo: "))
-secuencia = 1
+secuencia = 0
 multiplo = 0
 suma = 0
 
 while secuencia < limite - 1:
-    print("el multiplo previo fue: ", multiplo)
+    
     secuencia = secuencia + 1
+    print("la secuencia va en: ", secuencia)
+    previo = multiplo
+    print("el multiplo previo fue: ", previo)
+    # if previo != multiplo:
+    suma = multiplo + previo
+
     if secuencia%3 == 0 or secuencia%5 == 0:
         multiplo = secuencia
+        # multiplo = multiplo + valor
         print("el multiplo es", multiplo)
-    # suma = multiplo + secuencia
-        
-
+    
 print("el resultado es", suma)
